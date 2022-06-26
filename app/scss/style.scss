@@ -31,7 +31,7 @@ h2{
  padding: 0 40px;
  margin: 0 auto;
  background-color: transparent;
- @media screen and (max-width: 375px) {
+ @media screen and (max-width: 425px) {
    padding: 0 10px;
  }
 }
@@ -47,7 +47,7 @@ ul{
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 175px;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     // height: auto;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -57,7 +57,7 @@ ul{
     font-size: 48px;
     line-height: 58px;
     margin-bottom: 64px;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
       font-size: 30px;
       line-height: 40px;
       text-align: center;
@@ -68,7 +68,7 @@ ul{
     max-width: 765px;
     padding-left: 40px;
     margin-bottom: 80px;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
       padding-left: 0;
       margin-bottom: 40px;
     }
@@ -77,7 +77,7 @@ ul{
       font-size: 32px;
       line-height: 39px;
       position: relative;
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 425px) {
         font-size: 20px;
         line-height: 22px;
         padding-left: 50px;
@@ -90,14 +90,14 @@ ul{
         background-color: #fff;
         left: 0;
         top: 19px;
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 425px) {
           width: 34px;
           top: 12px;
         }
       }
       & + &{
         margin-top: 46px;
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 425px) {
           margin-top: 20px;
         }
       }
@@ -108,7 +108,7 @@ ul{
     display: flex;
     column-gap: 50px;
     align-items: center;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
         flex-direction: column-reverse;
         padding-left: 0;
     }
@@ -116,7 +116,7 @@ ul{
       max-width: 270px;
       font-size: 20px;
       line-height: 24px;
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 425px) {
         text-align: center;
         margin-bottom: 15px;
       }
@@ -136,7 +136,7 @@ ul{
     line-height: 29px;
     color: #FFFFFF;
     transition: all .3s;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 425px) {
         font-size: 18px;
         padding: 15px 60px;
     }
