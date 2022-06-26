@@ -31,6 +31,9 @@ h2{
  padding: 0 40px;
  margin: 0 auto;
  background-color: transparent;
+ @media screen and (max-width: 375px) {
+   padding: 0 10px;
+ }
 }
 
 ul{
@@ -44,21 +47,41 @@ ul{
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 175px;
+  @media screen and (max-width: 375px) {
+    // height: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
   &__title{
     max-width: 890px;
     font-size: 48px;
     line-height: 58px;
     margin-bottom: 64px;
+    @media screen and (max-width: 375px) {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
   &__services{
     max-width: 765px;
     padding-left: 40px;
     margin-bottom: 80px;
+    @media screen and (max-width: 375px) {
+      padding-left: 0;
+      margin-bottom: 40px;
+    }
     &-item{
       padding-left: 95px;
       font-size: 32px;
       line-height: 39px;
       position: relative;
+      @media screen and (max-width: 375px) {
+        font-size: 20px;
+        line-height: 22px;
+        padding-left: 50px;
+      }
       &::before{
         position: absolute;
         content: '';
@@ -67,9 +90,16 @@ ul{
         background-color: #fff;
         left: 0;
         top: 19px;
+        @media screen and (max-width: 375px) {
+          width: 34px;
+          top: 12px;
+        }
       }
       & + &{
         margin-top: 46px;
+        @media screen and (max-width: 375px) {
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -78,10 +108,18 @@ ul{
     display: flex;
     column-gap: 50px;
     align-items: center;
+    @media screen and (max-width: 375px) {
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
     &__text{
       max-width: 270px;
       font-size: 20px;
       line-height: 24px;
+      @media screen and (max-width: 375px) {
+        text-align: center;
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -98,6 +136,10 @@ ul{
     line-height: 29px;
     color: #FFFFFF;
     transition: all .3s;
+    @media screen and (max-width: 375px) {
+        font-size: 18px;
+        padding: 15px 60px;
+    }
     &:hover{
       background: #44b427;
       transition: all .3s;
@@ -345,6 +387,7 @@ ul{
     padding-bottom: 118px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
