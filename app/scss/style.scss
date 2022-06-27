@@ -124,6 +124,7 @@ ul{
       @media screen and (max-width: 500px) {
         text-align: center;
         margin-bottom: 15px;
+        max-width: 100%;
       }
     }
   }
@@ -245,17 +246,17 @@ ul{
         height: 100%;
         box-shadow:
         0px 1px 0px 0px rgb(255, 255, 255),
-        0px 11px 0px 0px #525252,
-        0px 10px 0px 1px rgb(255, 255, 255),
+        0px 12px 0px 0px #525252,
+        0px 9px 0px 1px rgb(255, 255, 255),
         -1px 0px 0px 0px rgb(255, 255, 255),
-        -11px 0px 0px 0px #525252,
-        -10px 0px 0px 1px rgb(255, 255, 255),
+        -12px 0px 0px 0px #525252,
+        -9px 0px 0px 1px rgb(255, 255, 255),
         0px -1px 0px 0px rgb(255, 255, 255),
-        0px -11px 0px 0px #525252,
-        0px -10px 0px 1px rgb(255, 255, 255),
+        0px -12px 0px 0px #525252,
+        0px -9px 0px 1px rgb(255, 255, 255),
         1px 0px 0px 0px rgb(255, 255, 255),
-        11px 0px 0px 0px #525252,
-        10px 0px 0px 1px rgb(255, 255, 255);
+        12px 0px 0px 0px #525252,
+        9px 0px 0px 1px rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
