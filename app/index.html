@@ -7,9 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nutrition</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
+  
+  <header class="header"  id="top">
+    <div class="container">
+      <menu class="header__menu-desktop">
+        <ul>
+          <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+          <li><a href="#rate">ТАРИФЫ</a></li>
+          <li><a href="#documents">ДОКУМЕНТЫ</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </menu>
+      <menu class="header__menu-mobile">
+        <div class="header__menu-mobile__top">
+          <div class="header__menu-mobile__burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="header__menu-mobile__phone">
+            <a href="tel:+79999999999">+7 (999) 999 99 99</a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+          <li><a href="#rate">ТАРИФЫ</a></li>
+          <li><a href="#documents">ДОКУМЕНТЫ</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </menu>
+    </div>
+  </header>
 
   <section class="main">
     <div class="container">
@@ -71,7 +103,7 @@
     </div>
   </section>
 
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="container">
       <h2 class="advantages__title">ПОЧЕМУ СТОИТ ОБРАТИТЬСЯ КО МНЕ?</h2>
       <div class="advantages__wrapper">
@@ -153,7 +185,7 @@
     </div>
   </section>
 
-  <section class="rate">
+  <section class="rate" id="rate">
     <div class="container">
       <h2 class="rate__title">ТАРИФЫ:</h2>
       <div class="rate__wrapper">
@@ -253,7 +285,7 @@
     </div>
   </section>
 
-  <section class="documents">
+  <section class="documents" id="documents">
     <div class="container">
       <h2 class="documents__title">МОИ СЕРТИФИКАТЫ И ДИПЛОМЫ</h2>
       <div class="documents__img">
@@ -265,7 +297,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container">
       <h2 class="footer__title">КАК СО МНОЙ СВЯЗАТЬСЯ</h2>
       <div class="footer__contacts-wrapper">
@@ -293,6 +325,9 @@
       </div>
     </div>
   </footer>
+
+  
+  <a href="#top" class="back__main">Наверх</a>
 </body>
 
 </html>

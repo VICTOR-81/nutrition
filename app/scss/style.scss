@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -43,6 +47,109 @@ h2{
 
 ul{
   list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  position: fixed;
+  background: #000;
+  width: 100%;
+  z-index: 5;
+  @media screen and (max-width: 500px) {
+    position: static;
+  }
+  menu{
+    padding: 0;
+    margin: 0;
+  }
+  &__menu{
+    &-desktop{
+      ul{
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
+        a{
+          color: #fff;
+          position: relative;
+          &::after{
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.5s;
+          }
+          &:hover:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            bottom: -4px;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.5s;
+          }
+        }
+      }
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+    &-mobile{
+      &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+      }
+      &__burger{
+        .bar1, .bar2, .bar3 {
+          width: 34px;
+          height: 3px;
+          background-color: #fff;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+        .change.bar1 {
+            transform: rotate(-45deg) translate(-5px, 5px) ;
+        }
+        .change.bar2 {
+            opacity: 0;
+        }
+        .change.bar3 {
+            transform: rotate(45deg) translate(-8px, -8px) ;
+        }
+      }
+      &__phone{
+        a{
+          font-size: 26px;
+          line-height: 28px;
+          color: #fff;
+        }
+      }
+      ul{
+        height: 0;
+        overflow: hidden;
+        &.open{
+          height: 100vh;
+          transition: all .5s;
+        }
+        li{
+          margin: 40px 0;
+          a{
+            color: #fff;
+            font-size: 26px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .main{
@@ -501,9 +608,6 @@ ul{
         width: 56px;
         height: 56px;
       }
-      a{
-        text-decoration: none;
-      }
       img{
         width: 48px;
         height: 48px;
@@ -516,7 +620,6 @@ ul{
     &-right{
       a{
         display: block;
-        text-decoration: none;
         font-weight: 400;
         font-size: 32px;
         line-height: 39px;
@@ -546,5 +649,25 @@ ul{
       font-size: 18px;
       line-height: 28px;
     }
+  }
+}
+
+.back__main{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #55D235; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  &:hover{
+    background: #44b427;
+    transition: all .3s;
   }
 }
