@@ -609,9 +609,9 @@ a{
     &-left{
       @media screen and (max-width: 500px) {
         display: flex;
-        flex-wrap: wrap;
-        width: 56px;
-        height: 56px;
+        // flex-wrap: wrap;
+        // width: 84px;
+        // height: 56px;
       }
       img{
         width: 48px;
