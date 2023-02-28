@@ -50,3 +50,30 @@ menuItem.forEach(menuItem => {
   })
 });
 
+
+
+
+const consultation = document.querySelectorAll('.consultation__btn');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+// const modalClose = document.querySelector('.modal__close');
+
+consultation.forEach(consultBtn => {
+  consultBtn.addEventListener('click', openModal => {
+    modal.classList.toggle("modal__hide");
+    header.style.position = 'static';
+    document.body.style.overflow = 'hidden';
+    overlay.classList.toggle('overlay_open');
+  })
+});
+
+overlay.addEventListener('click', (event) => {
+  const target = event.target;
+  if (overlay === target || target.closest('.modal__close')) {
+  modal.classList.toggle("modal__hide");
+  document.body.style.overflow = '';
+  header.style.position = 'fixed';
+  overlay.classList.toggle('overlay_open');
+  console.log(target);
+  }
+});

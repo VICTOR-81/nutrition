@@ -1,0 +1,102 @@
+.rate{
+  color: #000;
+  background-color: #fff;
+  padding-bottom: 100px;
+  &__title{
+    margin-bottom: 20px;
+    @media screen and (max-width: 500px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+    }
+  }
+  &__item{
+    max-width: 500px;
+    height: fit-content;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.25);
+    flex: 1;
+    text-align: center;
+    padding: 24px 24px 54px;
+    border-radius: 10px;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      max-width: 60%;
+      padding: 15px 15px 35px;
+    }
+    @media screen and (max-width: 768px) {
+      // max-width: 100%;
+      padding: 15px 15px 35px;
+    }
+    @media screen and (max-width: 500px) {
+      max-width: 100%;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      display: inline-block;
+      position: relative;
+      @media screen and (max-width: 1366px) {
+        font-size: 27px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        bottom: -1px;
+      }
+    }
+    &-list{
+      padding-top: 20px;
+      padding-bottom: 41px;
+      text-align: left;
+      @media screen and (max-width: 500px) {
+        padding-top: 20px;
+      }
+      li + li{
+        margin-top: 25px;
+      }
+      li{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        padding-left: 30px;
+        position: relative;
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+          line-height: 20px;
+          padding-left: 24px;
+        }
+        &::before{
+          position: absolute;
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #000;
+          left: 0;
+          top: 13px;
+          @media screen and (max-width: 500px) {
+            width: 16px;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
