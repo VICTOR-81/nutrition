@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  
-  <header class="header"  id="top">
+
+  <header class="header" id="top">
     <div class="container">
       <menu class="header__menu-desktop">
         <ul>
@@ -193,23 +193,13 @@
           <div class="rate__item-title">“Я сам(а)”</div>
           <ul class="rate__item-list">
             <li>
-              Сбор анамнеза. Оценка состояния здоровья с помощью анкет и опросников
+              Первичная консультация, сбор анамнеза
             </li>
             <li>
-              Фото до/после (по желанию)
+              Меню на 4 недели
             </li>
             <li>
-              Анализ питания клиента
-            </li>
-            <li>
-              Анализ образа жизни клиента
-            </li>
-            <li>
-              Выявление пищевых
-              предпочтений клиента
-            </li>
-            <li>
-              Составление рациона на 7-14 дней с учетом предпочтений клиента
+              Отвечаю на возникшие вопросы
             </li>
           </ul>
           <button class="rate__item-btn consultation__btn">
@@ -217,64 +207,45 @@
           </button>
         </div>
         <div class="rate__item">
-          <div class="rate__item-title">“Вместе до результата”</div>
+          <div class="rate__item-title">“Общий”</div>
           <ul class="rate__item-list">
             <li>
-              Сбор анамнеза. Оценка
-              состояния здоровья с помощью
-              анкет и опросников
+              Сбор анамнеза, пищевой дневник в течении 3 дней
             </li>
             <li>
-              Фото до/после (по желанию)
+              Готовый рацион на каждый день
             </li>
             <li>
-              Анализ питания клиента
+              Онлайн-чат поддержки
             </li>
             <li>
-              Анализ образа жизни клиента
+              Отчет по весу ежедневно, что позволяет контролировать результат
             </li>
             <li>
-              Выявление пищевых
-              предпочтений клиента
+              Оплата каждые 4 недели
+            </li>
+          </ul>
+          <button class="rate__item-btn consultation__btn">
+            ЗАПИСАТЬСЯ
+          </button>
+        </div>
+        <div class="rate__item">
+          <div class="rate__item-title">“Индивидуальный”</div>
+          <ul class="rate__item-list">
+            <li>
+              Сбор анамнеза, заполнение анкеты, анализы, выявление причин плохого самочувствия и набора веса
             </li>
             <li>
-              Составление рациона
-              на 14-28 дней с учетом
-              предпочтений клиента
+              Подбор меню, саплиментов
             </li>
             <li>
-              Рекомендации нуутрицевтиков
-              только при наличии медецинских анализов
+              Личное сопровождение, поддержка, разбор возникших вопросов
             </li>
             <li>
-              Биоимпедансометрия (анализ
-              состава тела)
+              Фотоотчет раз в 4 недели
             </li>
             <li>
-              Подбор протокола питания при
-              наличии каких-либо проблем
-              со здоровьем
-            </li>
-            <li>
-              Клиент сдает анализы, при
-              необходимости рекомендация
-              к посещению врача
-            </li>
-            <li>
-              Рекомендации по питанию
-              в дни тренеровок
-            </li>
-            <li>
-              Отслеживание результатов
-              каждые две недели
-            </li>
-            <li>
-              Поддержка на протяжении
-              всего периода снижения/
-              набора массы тела
-            </li>
-            <li>
-              Обратная связь
+              Оплата каждые 4 недели
             </li>
           </ul>
           <button class="rate__item-btn consultation__btn">
@@ -311,9 +282,6 @@
           <a href="tg://resolve?domain=AnnaValerevna_S">
             <img src="images/telegram.svg" alt="">
           </a>
-          <!-- <a href="https://wa.me/79232846861">
-            <img src="images/whatsapp.svg" alt="">
-          </a> -->
         </div>
         <div class="footer__contacts-right">
           <a href="mailto:mail@mail.ru">mail@mail.ru</a>
@@ -326,8 +294,48 @@
     </div>
   </footer>
 
-  
-  <a  class="back__main">Наверх</a>
+  <div class="overlay">
+    <div class="modal modal__hide">
+      <div class="modal__container">
+        <button class="modal__close">X</button>
+        <div class="modal__title">Получить консультацию</div>
+        <form action="">
+          <label for="">
+            Ваше имя
+            <input type="text">
+          </label>
+          <label for="">
+            Ваша электронная почта
+            <input type="text">
+          </label>
+          <label for="">
+            Ваш номер телефона
+            <input type="text">
+          </label>
+          <div class="modal__contactchoice-title">
+            Пожалуйста, выберите предпочтительный способ связи:
+          </div>
+          <div class="modal__contactchoice">
+            <div>
+              <input type="radio" id="contactChoice1" name="contact" value="email">
+              <label for="contactChoice1">Email</label>
+            </div>
+            <div>
+              <input type="radio" id="contactChoice2" name="contact" value="WhatsApp">
+              <label for="contactChoice2">WhatsApp</label>
+            </div>
+            <div>
+              <input type="radio" id="contactChoice3" name="contact" value="Telegram">
+              <label for="contactChoice3">Telegram</label>
+            </div>
+          </div>
+          <button class="modal__btn">Записаться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <a class="back__main">Наверх</a>
 </body>
 
 </html>
