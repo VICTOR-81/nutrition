@@ -141,8 +141,9 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 107px;
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 767px) {
         flex-direction: column;
+        align-items: flex-start;
         margin-bottom: 20px;
       }
     }
